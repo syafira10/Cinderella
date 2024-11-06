@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/gui.rpy", line 95, in script
+    define config.main_menu_background_fit = True
+  File "renpy/common/000namespaces.rpy", line 34, in set
+    setattr(self.nso, name, value)
+Exception: config.main_menu_background_fit is not a known configuration variable.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/gui.rpy", line 95, in script
+    define config.main_menu_background_fit = True
+  File "C:\Users\jenyft\Downloads\renpy-8.3.2-sdk\renpy\ast.py", line 2235, in execute
+    self.set()
+  File "C:\Users\jenyft\Downloads\renpy-8.3.2-sdk\renpy\ast.py", line 2253, in set
+    ns.set(self.varname, value)
+  File "renpy/common/000namespaces.rpy", line 34, in set
+    setattr(self.nso, name, value)
+  File "C:\Users\jenyft\Downloads\renpy-8.3.2-sdk\renpy\defaultstore.py", line 101, in __setattr__
+    raise Exception('config.%s is not a known configuration variable.' % (name))
+Exception: config.main_menu_background_fit is not a known configuration variable.
+
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.3.2.24090902
+Cinderella 7.0
+Wed Nov  6 02:33:20 2024
